@@ -4,9 +4,12 @@ from django.db import models
 class Trail(models.Model):
     name=models.CharField(max_length=100)
     location=models.CharField(max_length=100)
-    distance=models.IntegerField()
+    distance=models.CharField()
 
       # Changing this instance method
   # does not impact the database, therefore
   # no makemigrations is necessary
 #   something goes down here later as well
+
+def __str__(self):
+    return self.name

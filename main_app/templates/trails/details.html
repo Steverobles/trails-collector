@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Trail Details</h1>
+
+<div class="card">
+  <div class="card-content">
+    <span class="card-title">{{ trail.name }}</span>
+    <p>Location: {{ trail.location }}</p>
+    <p>Distance: {{ trail.distance}}</p>
+  </div>
+</div>
+
+{% endblock %}
