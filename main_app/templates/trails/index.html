@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Trails List</h1>
+
+{% for trail in trails %}
+  <div class="card">
+    <div class="card-content">
+      <span class="card-title">{{ trail.name }}</span>
+      <p>Location: {{ trail.location }}</p>
+      <p>Distance: {{ trail.distance }}</p>
+      <!-- {% if trails.age > 0 %}
+        <p>Age: {{ trails.age }}</p>
+      {% else %}
+        <p>Age: Kitten</p>
+      {% endif %} -->
+    </div>
+  </div>
+{% endfor %}
+
+{% endblock %}
